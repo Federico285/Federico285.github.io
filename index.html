@@ -1,11 +1,111 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Il mio portfolio</title>
-</head>
-<body>
-  <h1>Benvenuto nel mio sito!</h1>
-  <p>Questo è un esempio di sito hostato con GitHub Pages.</p>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Federico Falconi — Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="site">
+      <header class="topbar">
+        <div class="brand">
+          <div class="logo">FF</div>
+          <div>
+            <h1 class="name">Federico Falconi</h1>
+            <p class="role">Frontend Engineer • Mobile & Web</p>
+          </div>
+        </div>
+        <div class="controls"><button id="themeToggle" class="btn-ghost" aria-label="Toggle Theme">Toggle theme</button><a class="btn-primary" href="#contact">Contact</a></div>
+      </header>
+      <section class="hero">
+        <div class="hero-body">
+          <h2>Hi, I’m <strong>Federico Falconi</strong></h2>
+          <p class="lead"> I build accessible, scalable, and delightful user interfaces for web and mobile. I focus on performance, good UX and clean code. </p>
+          <div class="hero-actions"><a class="btn-primary" href="#projects">View Projects</a><a class="btn-outline" href="#skills">See Skills</a></div>
+        </div>
+        <aside class="hero-card">
+          <h3>Quick Info</h3>
+          <ul>
+            <li>Location: Milan, Italy</li>
+            <li>Available for: OCCUPIED!</li>
+            <li>Email: <a href="fedefalco00@yahoo.it">fedefalco00@yahoo.it</a></li>
+          </ul>
+        </aside>
+      </section>
+      <section id="skills" class="section">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid" aria-live="polite">
+          <article class="skill-card" data-progress="90">
+            <h4>JavaScript / TypeScript</h4>
+            <p class="muted">ESNext, TS, tooling, testing</p>
+            <div class="progress" aria-hidden="true">
+              <div class="progress-bar" style="width:0%"></div>
+            </div>
+          </article>
+          <article class="skill-card" data-progress="85">
+            <h4>React / React Native</h4>
+            <p class="muted">Hooks, performance, RN styling</p>
+            <div class="progress" aria-hidden="true">
+              <div class="progress-bar" style="width:0%"></div>
+            </div>
+          </article>
+          <article class="skill-card" data-progress="85">
+            <h4>Capacitor </h4>
+            <p class="muted">Web apps, observability</p>
+            <div class="progress" aria-hidden="true">
+              <div class="progress-bar" style="width:0%"></div>
+            </div>
+          </article>
+          <article class="skill-card" data-progress="80">
+            <h4>Swift / SwiftUI</h4>
+            <p class="muted">iOS apps, Combine, async/await</p>
+            <div class="progress" aria-hidden="true">
+              <div class="progress-bar" style="width:0%"></div>
+            </div>
+          </article>
+          <article class="skill-card" data-progress="80">
+            <h4>Kotlin</h4>
+            <p class="muted">Android apps, BE-FE integration</p>
+            <div class="progress" aria-hidden="true">
+              <div class="progress-bar" style="width:0%"></div>
+            </div>
+          </article>
+          <article class="skill-card" data-progress="75">
+            <h4>UI / UX</h4>
+            <p class="muted">Design systems, accessibility</p>
+            <div class="progress" aria-hidden="true">
+              <div class="progress-bar" style="width:0%"></div>
+            </div>
+          </article>
+          <article class="skill-card" data-progress="70">
+            <h4>Backend Basics</h4>
+            <p class="muted">APIs, Node.js, databases</p>
+            <div class="progress" aria-hidden="true">
+              <div class="progress-bar" style="width:0%"></div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="projects" class="section">
+        <h2 class="section-title">Selected Projects</h2>
+        <div class="projects-grid">
+          <article class="project">
+            <h3>Leet Code Portfolio</h3>
+            <p class="muted">my personal github repo where i resolve leetCode problems in different languages: TypeScript, c#, python...</p><a class="link-muted" href="https://github.com/Federico285/portfolio-leet-code">Repo link</a>
+          </article>
+          <article class="project">
+            <h3>PAMON</h3>
+            <p class="muted">my first ever medium projec while in Uni -WIP-</p><a class="link-muted" href="https://github.com/fmselab/PAMON4project">Repo link</a>
+          </article>
+        </div>
+      </section>
+      <footer id="contact" class="footer">
+        <div><strong>Federico Falconi</strong>
+          <p class="muted">fedefalco00@yahoo.it</p>
+        </div><small class="muted">© Federico Falconi — Built with ❤️ and TypeScript</small>
+      </footer>
+    </main>
+    <script type="module" src="main.js"></script>
+  </body>
 </html>
